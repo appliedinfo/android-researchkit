@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#222222">
+    android:background="#ffffff">
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="fill_parent"
@@ -17,12 +17,6 @@
         android:gravity="bottom"
         android:layout_alignParentBottom="true"
         android:orientation="vertical" >
-        <TextView
-            android:layout_width="fill_parent"
-            android:id="@+id/bottom_separator"
-            android:layout_height="1px"
-            android:background="#55000000">
-        </TextView>
 
         <FrameLayout
             android:background="#00000000"
@@ -39,7 +33,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:layout_gravity="left"
+                android:layout_gravity="left|top"
                 android:minWidth="100dp"
                 android:layout_marginLeft="8dp"
                 android:id="@+id/skip"

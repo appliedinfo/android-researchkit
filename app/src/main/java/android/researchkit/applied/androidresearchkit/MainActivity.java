@@ -56,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-
-        fragments.add(DataUse.newInstance("data consent"));
+        fragments.add(StartPage.newInstance("Start Page"));
         fragments.add(DataGathering.newInstance("Gathering concent"));
         fragments.add(Privacy.newInstance("Privacy Consent"));
+        fragments.add(DataUse.newInstance("data consent"));
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager(), fragments);
         pager = (ViewPager) findViewById(R.id.view_pager);
 

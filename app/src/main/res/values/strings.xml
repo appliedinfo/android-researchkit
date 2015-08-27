@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">AndroidResearchKit</string>
-
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    //Start Page Resources
+    <string name="StartPage_wlcmTxt">Welcome</string>
+    <string name="StartPage_bodyTxt">
+       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="StartPage_linkText">Learn more about survey first</string>
+
+    //Data Gathering Page Resources
+    <string name="DataGathering_wlcmTxt">Data Gathering</string>
+    <string name="DataGathering_bodyTxt">
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="DataGathering_linkTxt">Learn more about how data is gathered</string>
+
+    //Privacy Page Resources
+
 </resources>
