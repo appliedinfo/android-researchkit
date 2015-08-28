@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(DataUse.newInstance("data consent"));
         fragments.add(TimeCommitment.newInstance("Time commitment"));
         fragments.add(StudySurvey.newInstance("Study Survey"));
+        fragments.add(StudyTasks.newInstance("Time commitment"));
+        fragments.add(Withdrawing.newInstance("Study Survey"));
 
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager(), fragments);
         pager = (ViewPager) findViewById(R.id.view_pager);

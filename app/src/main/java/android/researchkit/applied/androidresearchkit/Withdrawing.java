@@ -13,11 +13,19 @@ import android.view.ViewGroup;
  */
 public class Withdrawing extends Fragment {
 
-
     public Withdrawing() {
         // Required empty public constructor
     }
 
+    public static Withdrawing newInstance(String text) {
+
+        Withdrawing f = new Withdrawing();
+        Bundle b = new Bundle();
+        b.putString("msg", text);
+        f.setArguments(b);
+
+        return f;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,6 +33,4 @@ public class Withdrawing extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.withdrawing_view, container, false);
     }
-
-
 }

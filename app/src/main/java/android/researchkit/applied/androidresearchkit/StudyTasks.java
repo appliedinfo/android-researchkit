@@ -14,6 +14,16 @@ public class StudyTasks extends Fragment {
         // Required empty public constructor
     }
 
+    public static StudyTasks newInstance(String text) {
+
+        StudyTasks f = new StudyTasks();
+        Bundle b = new Bundle();
+        b.putString("msg", text);
+        f.setArguments(b);
+
+        return f;
+    }
+
 
 
 
