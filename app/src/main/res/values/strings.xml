@@ -14,8 +14,50 @@
     <string name="DataGathering_bodyTxt">
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
     </string>
-    <string name="DataGathering_linkTxt">Learn more about how data is gathered</string>
+    <string name="DataGathering_linkText">Learn more about how data is gathered</string>
 
     //Privacy Page Resources
+    <string name="Privacy_wlcmTxt">Privacy</string>
+    <string name="Privacy_bodyTxt">
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="Privacy_linkText">Learn more about how your privacy and identity are protected</string>
+
+    //Privacy Page Resources
+    <string name="DataUse_wlcmTxt">Data Use</string>
+    <string name="DataUse_bodyTxt">
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="DataUse_linkText">Learn more about how data is used</string>
+
+    //Time Commitment Page Resources
+    <string name="TimeCommitment_wlcmTxt">Time Commitment</string>
+    <string name="TimeCommitment_bodyTxt">
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="TimeCommitment_linkText">Learn more about study's impact on your time</string>
+
+
+    //Study Survey Page Resources
+    <string name="StudySurvey_wlcmTxt">Study Survey</string>
+    <string name="StudySurvey_bodyTxt">
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="StudySurvey_linkText">Learn more about the study survey</string>
+
+    //Study Tasks Page Resources
+    <string name="StudyTasks_wlcmTxt">Study Tasks</string>
+    <string name="StudyTasks_bodyTxt">
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="StudyTasks_linkText">Learn more about the study survey</string>
+
+    //Study Tasks Page Resources
+    <string name="Withdrawing_wlcmTxt">Withdrawing</string>
+    <string name="Withdrawing_bodyTxt">
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    </string>
+    <string name="Withdrawing_linkText">Learn more about withdrawing</string>
+
 
 </resources>

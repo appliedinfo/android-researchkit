@@ -17,18 +17,20 @@
         android:textColor="#5aabff" />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/linearLayout"
-        android:layout_marginBottom="40sp">
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:id="@+id/image"
-            android:src="@drawable/datagathering1"
-            android:scaleType="fitCenter" />
-    </RelativeLayout>
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_marginTop="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/studytasks"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 
     <LinearLayout
         android:orientation="vertical"
@@ -44,7 +46,7 @@
             android:layout_height="wrap_content"
             android:textSize="35sp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/DataGathering_wlcmTxt"
+            android:text="@string/StudyTasks_wlcmTxt"
             android:id="@+id/DataGatheringTextView"
             android:layout_gravity="center_horizontal" />
 
@@ -53,21 +55,25 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/textView"
-            android:text="@string/DataGathering_bodyTxt"
+            android:text="@string/StudyTasks_bodyTxt"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10sp"
             android:layout_marginTop="16sp"
-            android:layout_marginRight="5sp" />
+            android:layout_marginRight="10sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/DataGathering_linkText"
+            android:text="@string/StudyTasks_linkText"
             android:id="@+id/textView2"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16sp"
-            android:textColor="#5aabff" />
+            android:textColor="#5aabff"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp" />
     </LinearLayout>
+
 
 </RelativeLayout>

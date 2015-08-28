@@ -1,40 +1,32 @@
 package android.researchkit.applied.androidresearchkit;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
+public class StudySurvey extends Fragment {
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class DataGathering extends Fragment {
-
-
-    public DataGathering() {
+    public StudySurvey() {
         // Required empty public constructor
     }
+    public static StudySurvey newInstance(String text) {
 
-    public static DataGathering newInstance(String text) {
-
-        DataGathering f = new DataGathering();
+        StudySurvey f = new StudySurvey();
         Bundle b = new Bundle();
         b.putString("msg", text);
-
         f.setArguments(b);
 
         return f;
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.data_gathering_view, container, false);
-        return v;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.study_survey_view, container, false);
     }
 
 

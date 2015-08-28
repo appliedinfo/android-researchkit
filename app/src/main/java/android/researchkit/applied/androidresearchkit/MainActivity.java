@@ -1,16 +1,13 @@
 package android.researchkit.applied.androidresearchkit;
 
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -53,13 +50,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(@NonNull View v) {
                 //onDonePressed();
             }
-
-
         });
+
         fragments.add(StartPage.newInstance("Start Page"));
-        fragments.add(DataGathering.newInstance("Gathering concent"));
+        fragments.add(DataGathering.newInstance("Gathering Consent"));
         fragments.add(Privacy.newInstance("Privacy Consent"));
         fragments.add(DataUse.newInstance("data consent"));
+        fragments.add(TimeCommitment.newInstance("Time commitment"));
+        fragments.add(StudySurvey.newInstance("Study Survey"));
+
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager(), fragments);
         pager = (ViewPager) findViewById(R.id.view_pager);
 
