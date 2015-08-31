@@ -34,6 +34,11 @@ public class DataGathering extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.data_gathering_view, container, false);
+        String msg = getArguments().getString("msg");
+        if (msg != null) {
+            TextView tv = (TextView) v.findViewById(R.id.datatextView);
+            tv.setText(getArguments().getString("msg"));
+        }
         return v;
     }
 

@@ -14,20 +14,32 @@ import android.widget.TextView;
 
 import java.util.List;
 import java.util.Vector;
+import android.researchkit.applied.androidresearchkit.ResearchKitBrain;
 
-
-public class MainActivity extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
-        Intent intent = new Intent(this, ConsentActivity.class);
-        startActivity(intent);
-    }
+public class MainActivity extends ResearchKitBrain {
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        //setContentView(R.layout.activity_main);
+//        Intent intent = new Intent(this, ConsentActivity.class);
+//        startActivity(intent);
+//    }
 
 //    public void startConsentActivity( View v){
 //
 //    }
+    @Override
+    public void init(Bundle savedInstanceState) {
+        addSlide(DataGathering.newInstance("hello message"));
+        addSlide(AddingSlides.newInstance(R.layout.data_gathering_view));
+        addSlide(AddingSlides.newInstance(R.layout.privacy_view));
+        addSlide(AddingSlides.newInstance(R.layout.data_use_view));
+        addSlide(AddingSlides.newInstance(R.layout.time_commitment_view));
+        addSlide(AddingSlides.newInstance(R.layout.study_survey_view));
+        addSlide(AddingSlides.newInstance(R.layout.study_tasks_view));
+        addSlide(AddingSlides.newInstance(R.layout.withdrawing_view));
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -49,6 +61,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    private void loadMainActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+    @Override
+    public void onSkipPressed() {
+        loadMainActivity();
+    }
+
+    @Override
+    public void onDonePressed() {
+        loadMainActivity();
+    }
+
+    public void getStarted(View v){
+        loadMainActivity();
     }
 }
 
