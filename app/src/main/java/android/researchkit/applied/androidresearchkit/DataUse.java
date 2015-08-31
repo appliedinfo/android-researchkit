@@ -36,8 +36,6 @@ public class DataUse extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.data_use_view, container, false);
-        TextView tv = (TextView) v.findViewById(R.id.data_use);
-        tv.setText(getArguments().getString("msg"));
         return v;
     }
 
