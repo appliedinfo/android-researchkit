@@ -37,17 +37,18 @@
                 android:layout_height="fill_parent"
                 android:layout_gravity="center" />
 
-            <Button
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:layout_gravity="left"
                 android:minWidth="100dp"
                 android:layout_marginLeft="8dp"
-                android:id="@+id/skip"
+                android:id="@+id/back"
                 style="?attr/borderlessButtonStyle"
                 android:background="@null"
                 android:textColor="#000000"
-                android:text="Skip" />
+                android:text="Back"
+                android:src="@drawable/backbuttonicon"/>
 
             <Button
                 android:layout_width="wrap_content"

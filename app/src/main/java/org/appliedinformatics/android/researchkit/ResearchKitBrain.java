@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
     private int slidesNumber;
     private IndicatorController mController;
     private boolean isVibrateOn = false;
-    private boolean showSkip = true;
+    private boolean showBack = true;
     private boolean showDone = true;
 
         @Override
@@ -40,14 +41,15 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.intro_layout);
 
-        final TextView skipButton = (TextView) findViewById(R.id.skip);
+        final ImageButton backButton = (ImageButton) findViewById(R.id.back);
         final Button nextButton = (Button) findViewById(R.id.next);
         final TextView doneButton = (TextView) findViewById(R.id.done);
 
-        skipButton.setOnClickListener(new View.OnClickListener() {
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(@NonNull View v) {
-                onSkipPressed();
+                pager.setCurrentItem(pager.getCurrentItem() - 1);
+                //onSkipPressed();
             }
         });
 
@@ -83,7 +85,7 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
                 if (slidesNumber > 1)
                     mController.selectPosition(position);
                 if (position == slidesNumber - 1) {
-                    skipButton.setVisibility(View.INVISIBLE);
+                    backButton.setVisibility(View.INVISIBLE);
                     nextButton.setVisibility(View.GONE);
                     if (showDone) {
                         doneButton.setVisibility(View.VISIBLE);
@@ -91,13 +93,13 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
                         doneButton.setVisibility(View.INVISIBLE);
                     }
                 } else {
-                    skipButton.setVisibility(View.VISIBLE);
+                    backButton.setVisibility(View.VISIBLE);
                     doneButton.setVisibility(View.GONE);
                     nextButton.setVisibility(View.VISIBLE);
                 }
 
-                if (!showSkip) {
-                    skipButton.setVisibility(View.INVISIBLE);
+                if (!showBack) {
+                    backButton.setVisibility(View.INVISIBLE);
                 }
             }
 

@@ -5,17 +5,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#ffffff">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="Cancel"
-        android:id="@+id/CancelTextView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="#5aabff" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
