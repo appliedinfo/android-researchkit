@@ -13,7 +13,7 @@
         <ImageView
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:id="@+id/image"
+            android:id="@+id/imageview"
             android:src="@drawable/datagathering1"
             android:scaleType="fitCenter" />
     </RelativeLayout>
@@ -34,14 +34,14 @@
             android:textSize="35sp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/DataGathering_wlcmTxt"
-            android:id="@+id/DataGatheringTextView"
+            android:id="@+id/titleview"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/datatextView"
+            android:id="@+id/textview"
             android:text="@string/DataGathering_bodyTxt"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10sp"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/DataGathering_linkText"
-            android:id="@+id/textView2"
+            android:id="@+id/linktextview"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16sp"
             android:textColor="#5aabff" />
