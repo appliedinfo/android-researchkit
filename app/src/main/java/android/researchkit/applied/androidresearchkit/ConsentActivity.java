@@ -36,6 +36,7 @@ public class ConsentActivity extends ResearchKitBrain {
 
     @Override
     public void onDonePressed() {
+
         loadMainActivity();
     }
 
