@@ -1,4 +1,4 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

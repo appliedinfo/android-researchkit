@@ -1,4 +1,4 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 /**
  * Created by aamirbhatt on 26/08/15.

@@ -1,11 +1,11 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
-import android.researchkit.applied.androidresearchkit.ResearchKitBrain;
+import org.appliedinformatics.android.researchkit.ResearchKitBrain;
 
 /**
  * Created by mir on 31/8/15.

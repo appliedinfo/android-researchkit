@@ -1,4 +1,4 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 
 import android.os.Bundle;
@@ -7,19 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+public class TimeCommitment extends Fragment {
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Withdrawing extends Fragment {
 
-    public Withdrawing() {
+    public TimeCommitment() {
         // Required empty public constructor
     }
 
-    public static Withdrawing newInstance(String text) {
+    public static TimeCommitment newInstance(String text) {
 
-        Withdrawing f = new Withdrawing();
+        TimeCommitment f = new TimeCommitment();
         Bundle b = new Bundle();
         b.putString("msg", text);
         f.setArguments(b);
@@ -31,6 +28,8 @@ public class Withdrawing extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.withdrawing_view, container, false);
+        return inflater.inflate(R.layout.time_commitment_view, container, false);
     }
+
+
 }

@@ -1,4 +1,4 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 
 import android.os.Bundle;
@@ -12,16 +12,16 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DataGathering extends Fragment {
+public class Privacy extends Fragment {
 
 
-    public DataGathering() {
+    public Privacy() {
         // Required empty public constructor
     }
 
-    public static DataGathering newInstance(String text) {
+    public static Privacy newInstance(String text) {
 
-        DataGathering f = new DataGathering();
+        Privacy f = new Privacy();
         Bundle b = new Bundle();
         b.putString("msg", text);
 
@@ -33,12 +33,8 @@ public class DataGathering extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.data_gathering_view, container, false);
-        String msg = getArguments().getString("msg");
-        if (msg != null) {
-            TextView tv = (TextView) v.findViewById(R.id.datatextView);
-            tv.setText(getArguments().getString("msg"));
-        }
+        // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.privacy_view, container, false);
         return v;
     }
 

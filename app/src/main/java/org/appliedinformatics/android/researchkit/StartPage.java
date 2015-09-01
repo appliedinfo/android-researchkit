@@ -1,4 +1,4 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

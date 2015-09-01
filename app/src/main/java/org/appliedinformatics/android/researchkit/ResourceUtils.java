@@ -1,4 +1,4 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

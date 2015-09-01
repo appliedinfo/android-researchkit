@@ -1,4 +1,5 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
+
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,14 +7,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class StudySurvey extends Fragment {
 
-    public StudySurvey() {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class Withdrawing extends Fragment {
+
+    public Withdrawing() {
         // Required empty public constructor
     }
-    public static StudySurvey newInstance(String text) {
 
-        StudySurvey f = new StudySurvey();
+    public static Withdrawing newInstance(String text) {
+
+        Withdrawing f = new Withdrawing();
         Bundle b = new Bundle();
         b.putString("msg", text);
         f.setArguments(b);
@@ -21,13 +27,10 @@ public class StudySurvey extends Fragment {
         return f;
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.study_survey_view, container, false);
+        return inflater.inflate(R.layout.withdrawing_view, container, false);
     }
-
-
 }

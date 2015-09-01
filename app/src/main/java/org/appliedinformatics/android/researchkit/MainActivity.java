@@ -1,4 +1,4 @@
-package android.researchkit.applied.androidresearchkit;
+package org.appliedinformatics.android.researchkit;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.List;
 import java.util.Vector;
-import android.researchkit.applied.androidresearchkit.ResearchKitBrain;
+import org.appliedinformatics.android.researchkit.ResearchKitBrain;
 
 public class MainActivity extends ResearchKitBrain {
 //    @Override
