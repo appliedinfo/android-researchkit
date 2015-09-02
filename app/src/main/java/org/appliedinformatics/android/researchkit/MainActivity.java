@@ -29,8 +29,11 @@ public class MainActivity extends ResearchKitBrain {
 //    }
     @Override
     public void init(Bundle savedInstanceState) {
-        addSlide(AddingSlides.newInstance(R.layout.start_page_view));
-        addSlide(DataGathering.newInstance("this is a test string..."));
+        DataGathering da =new  DataGathering();
+        da.setText("hello aamir123");
+        da.setTitlefield("Suhail");
+        da.setLinktextfield("owais din");
+        addSlide(da);
         addSlide(AddingSlides.newInstance(R.layout.data_gathering_view));
         addSlide(AddingSlides.newInstance(R.layout.privacy_view));
         addSlide(AddingSlides.newInstance(R.layout.data_use_view));
