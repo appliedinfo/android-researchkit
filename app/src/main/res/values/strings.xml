@@ -59,5 +59,11 @@
     </string>
     <string name="Withdrawing_linkText">Learn more about withdrawing</string>
 
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_info_filling">InfoFillingActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
 
 </resources>
