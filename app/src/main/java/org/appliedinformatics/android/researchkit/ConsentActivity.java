@@ -30,12 +30,12 @@ public class ConsentActivity extends ResearchKitBrain {
     }
 
     @Override
-    public void onSkipPressed() {
+    public void onDisagreePressed() {
         loadMainActivity();
     }
 
     @Override
-    public void onDonePressed() {
+    public void onAgreePressed() {
 
         loadMainActivity();
     }

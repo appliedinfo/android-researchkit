@@ -27,9 +27,9 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
     private List<Fragment> fragments = new Vector<>();
     private int slidesNumber;
     private IndicatorController mController;
-    private boolean isVibrateOn = false;
     private boolean showBack = true;
-    private boolean showDone = true;
+    private boolean showAgree = true;
+    private boolean showDisagree = true;
 
         @Override
     final protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +43,13 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
 
         final ImageButton backButton = (ImageButton) findViewById(R.id.back);
         final Button nextButton = (Button) findViewById(R.id.next);
-        final TextView doneButton = (TextView) findViewById(R.id.done);
+        final TextView agreeButton = (TextView) findViewById(R.id.agree);
+        final TextView disagreeButton = (TextView) findViewById(R.id.disagree);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(@NonNull View v) {
                 pager.setCurrentItem(pager.getCurrentItem() - 1);
-                //onSkipPressed();
             }
         });
 
@@ -60,10 +60,19 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
             }
         });
 
-        doneButton.setOnClickListener(new View.OnClickListener() {
+        agreeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(@NonNull View v) {
-                onDonePressed();
+
+                onAgreePressed();
+            }
+        });
+
+        disagreeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(@NonNull View v) {
+
+                onDisagreePressed();
             }
         });
 
@@ -71,6 +80,7 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
         pager = (ViewPager) findViewById(R.id.view_pager);
 
         pager.setAdapter(this.mPagerAdapter);
+
         /**
          *  ViewPager.setOnPageChangeListener is now deprecated. Use addOnPageChangeListener() instead of it.
          */
@@ -87,14 +97,17 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
                 if (position == slidesNumber - 1) {
                     backButton.setVisibility(View.INVISIBLE);
                     nextButton.setVisibility(View.GONE);
-                    if (showDone) {
-                        doneButton.setVisibility(View.VISIBLE);
+                    if (showAgree) {
+                        agreeButton.setVisibility(View.VISIBLE);
+                        disagreeButton.setVisibility(View.VISIBLE);
                     } else {
-                        doneButton.setVisibility(View.INVISIBLE);
+                        agreeButton.setVisibility(View.INVISIBLE);
+                        disagreeButton.setVisibility(View.INVISIBLE);
                     }
                 } else {
                     backButton.setVisibility(View.VISIBLE);
-                    doneButton.setVisibility(View.GONE);
+                    agreeButton.setVisibility(View.GONE);
+                    disagreeButton.setVisibility(View.GONE);
                     nextButton.setVisibility(View.VISIBLE);
                 }
 
@@ -114,7 +127,7 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
 
         if (slidesNumber == 1) {
             nextButton.setVisibility(View.GONE);
-            doneButton.setVisibility(View.VISIBLE);
+            agreeButton.setVisibility(View.VISIBLE);
         } else {
             initController();
         }
@@ -149,9 +162,9 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
 
     public abstract void init(@Nullable Bundle savedInstanceState);
 
-    public abstract void onSkipPressed();
+    public abstract void onDisagreePressed();
 
-    public abstract void onDonePressed();
+    public abstract void onAgreePressed();
 
     public void onDotSelected(int index) {}
 

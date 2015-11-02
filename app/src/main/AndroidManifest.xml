@@ -19,7 +19,11 @@
         <activity
             android:name=".ConsentActivity"
             android:label="Consent Library"
-            android:theme="@style/FullscreenTheme">
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".InfoFillingActivity"
+            android:label="@string/title_activity_info_filling" >
         </activity>
     </application>
 
