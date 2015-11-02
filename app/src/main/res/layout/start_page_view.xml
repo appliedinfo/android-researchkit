@@ -10,26 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
-        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="113dp">
+        android:layout_alignParentStart="true">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="35sp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StartPage_wlcmTxt"
-            android:id="@+id/WelcomeTextView"
+            android:text="@string/DataGathering_wlcmTxt"
+            android:id="@+id/titleview"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView"
-            android:text="@string/StartPage_bodyTxt"
+            android:id="@+id/linkview"
+            android:text="@string/DataGathering_bodyTxt"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10sp"
             android:layout_marginTop="16sp"
@@ -39,8 +38,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/StartPage_linkText"
-            android:id="@+id/textView2"
+            android:text="@string/DataGathering_linkText"
+            android:id="@+id/linkview"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16sp"
             android:textColor="#5aabff" />

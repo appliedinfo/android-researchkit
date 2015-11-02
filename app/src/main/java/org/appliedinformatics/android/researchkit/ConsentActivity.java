@@ -13,14 +13,14 @@ import org.appliedinformatics.android.researchkit.ResearchKitBrain;
 public class ConsentActivity extends ResearchKitBrain {
     @Override
     public void init(Bundle savedInstanceState) {
-        addSlide(AddingSlides.newInstance(R.layout.start_page_view));
-        addSlide(AddingSlides.newInstance(R.layout.data_gathering_view));
-        addSlide(AddingSlides.newInstance(R.layout.privacy_view));
-        addSlide(AddingSlides.newInstance(R.layout.data_use_view));
-        addSlide(AddingSlides.newInstance(R.layout.time_commitment_view));
-        addSlide(AddingSlides.newInstance(R.layout.study_survey_view));
-        addSlide(AddingSlides.newInstance(R.layout.study_tasks_view));
-        addSlide(AddingSlides.newInstance(R.layout.withdrawing_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.start_page_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.data_gathering_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.privacy_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.data_use_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.time_commitment_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.study_survey_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.study_tasks_view));
+        ORKConsentDocument(AddingSlides.newInstance(R.layout.withdrawing_view));
 
     }
 

@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:id="@+id/root_container">
 <RelativeLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
@@ -33,16 +38,16 @@
             android:layout_height="wrap_content"
             android:textSize="35sp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/DataUse_wlcmTxt"
-            android:id="@+id/DataGatheringTextView"
+            android:text="@string/DataGathering_wlcmTxt"
+            android:id="@+id/titleview"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView"
-            android:text="@string/DataUse_bodyTxt"
+            android:id="@+id/summaryview"
+            android:text="@string/DataGathering_bodyTxt"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10sp"
             android:layout_marginTop="16sp"
@@ -52,8 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/DataUse_linkText"
-            android:id="@+id/textView2"
+            android:text="@string/DataGathering_linkText"
+            android:id="@+id/linkview"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16sp"
             android:textColor="#5aabff" />
@@ -61,3 +66,4 @@
 
 </RelativeLayout>
 
+</FrameLayout>

@@ -136,7 +136,7 @@ public abstract class ResearchKitBrain extends AppCompatActivity {
     }
 
 
-    public void addSlide(@NonNull Fragment fragment) {
+    public void ORKConsentDocument(@NonNull Fragment fragment) {
         fragments.add(fragment);
         mPagerAdapter.notifyDataSetChanged();
     }

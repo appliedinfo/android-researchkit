@@ -1,18 +1,9 @@
 package org.appliedinformatics.android.researchkit;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-
-import java.util.List;
-import java.util.Vector;
-import org.appliedinformatics.android.researchkit.ResearchKitBrain;
 import android.view.View;
 
 public class MainActivity extends ResearchKitBrain {
@@ -29,18 +20,18 @@ public class MainActivity extends ResearchKitBrain {
 //    }
     @Override
     public void init(Bundle savedInstanceState) {
-        DataGathering da =new  DataGathering();
-        da.setText("hello aamir123");
-        da.setTitlefield("Suhail");
-        da.setLinktextfield("owais din");
-        addSlide(da);
-        addSlide(AddingSlides.newInstance(R.layout.data_gathering_view));
-        addSlide(AddingSlides.newInstance(R.layout.privacy_view));
-        addSlide(AddingSlides.newInstance(R.layout.data_use_view));
-        addSlide(AddingSlides.newInstance(R.layout.time_commitment_view));
-        addSlide(AddingSlides.newInstance(R.layout.study_survey_view));
-        addSlide(AddingSlides.newInstance(R.layout.study_tasks_view));
-        addSlide(AddingSlides.newInstance(R.layout.withdrawing_view));
+        ConsentView da = new ORKConsentSectionTypeDataGathering();
+        da.summary="<ul><li><i>hjhj</i></li></ul>";
+        da.title="Suhail";
+//        da.content="owais din90";
+        int img = R.drawable.datause;
+        da.image = img;
+//        ORKConsentSectionTypeDataGathering.newInstance(R.)
+        ORKConsentDocument(da);
+        ORKConsentSectionTypeDataUse du = new ORKConsentSectionTypeDataUse();
+//        ORKConsentDocument(du);
+//        ORKConsentSectionTypePrivacy pr = new ORKConsentSectionTypePrivacy();
+//        ORKConsentDocument(pr);
 
     }
 
